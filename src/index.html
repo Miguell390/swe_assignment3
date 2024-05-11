@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Information System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to our Restaurant</h1>
+    <h2>Make a Reservation</h2>
+    <form id="reservationForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="date" id="date" required>
+      <input type="time" id="time" required>
+      <input type="number" id="partySize" placeholder="Party Size" min="1" required>
+      <button type="submit">Make Reservation</button>
+    </form>
+
+    <h2>Place an Order</h2>
+    <form id="orderForm">
+      <input type="text" id="tableName" placeholder="Table Number" required>
+      <input type="text" id="customerName" placeholder="Customer Name" required>
+      <input type="text" id="orderItem" placeholder="Item" required>
+      <button type="submit">Add Item</button>
+    </form>
+    <ul id="orderList"></ul>
+    <button id="placeOrderBtn">Place Order</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
