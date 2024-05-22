@@ -10,10 +10,19 @@ CREATE TABLE MenuItems (
     price INT
 );
 
-CREATE TABLE FeedbackReview (
-    rating INT,
-    feedbackNotes VARCHAR(255)
+-- CREATE TABLE FeedbackReview (
+--     rating INT,
+--     feedbackNotes VARCHAR(255)
+-- );
+
+CREATE TABLE feedbackReview (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255),
+    rating VARCHAR(50) NOT NULL,
+    food TEXT,
+    service TEXT
 );
+
 
 
 -- ALTER TABLE Staff ADD FOREIGN KEY (RoleId) REFERENCES Roles(Id);

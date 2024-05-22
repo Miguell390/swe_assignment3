@@ -63,7 +63,7 @@
             <th>Price</th>
         </tr>
         <?php
-        // Reuse the same connection setup
+       
         $conn = new mysqli($servername, $username, $password, $dbname);
 
         // Check connection
@@ -95,7 +95,7 @@
             <th>Feedback Notes</th>
         </tr>
         <?php
-        // Reuse the same connection setup
+        
         $conn = new mysqli($servername, $username, $password, $dbname);
 
         // Check connection

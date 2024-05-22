@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Header information-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" Content="Software Architectures and Design Assignment 3">
+    <meta name="keywords" Content="HTML, CSS, JavaScript, PHP, SWE30003, Order, Place Order">
+    <meta name="Author" Content="Demetre, Kobie, Miguel, Hugh">
+    <title>Order</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<!--Page content-->
+
+<body>
+     <!--Nav Bar-->
+    <header>
+	<a href="Home.html"><image class="banner" src="images/RelaxingKoalaLogoLong.png"></a>
+		<nav>
+			<a href="Order.html">Place Order</a>
+			<a href="Reservation.html">Book In</a>
+			<a href="Feedback.html">Rate Us</a>
+		</nav>
+	</header>
+	<main>
+    <h1>Order Selection</h1>
+		<div class="order-container">
+			<div class="menu">
+				<h2>Menu</h2>
+				<ul>
+					<li data-item-id="1">Pizza (Margherita) - $10.00 <input type="number" min="0" value="0" data-item-id="1"></li>
+					<li data-item-id="2">Pasta (Alfredo) - $8.00 <input type="number" min="0" value="0" data-item-id="2"></li>
+					<li data-item-id="3">Salad (Caesar) - $5.00 <input type="number" min="0" value="0" data-item-id="3"></li>
+					</ul>
+			</div>
+			<div class="selected-items">
+				<h2>Your Order</h2>
+				<ul>
+					</ul>
+			</div>
+		</div>
+		<button type="button" onclick="submitOrder()">Submit Order</button>
+		<script src="scripts/script.js"></script> </body>
+	</main>
+</body>

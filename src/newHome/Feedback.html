@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Header information-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" Content="Software Architectures and Design Assignment 3">
+    <meta name="keywords" Content="HTML, CSS, JavaScript, PHP, SWE30003, Feedback, Rate Us">
+    <meta name="Author" Content="Demetre, Kobie, Miguel, Hugh">
+    <title>Feedback</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<!--Page content-->
+
+<body>
+     <!--Nav Bar-->
+    <header>
+	<a href="Home.html"><image class="banner" src="images/RelaxingKoalaLogoLong.png"></a>
+		<nav>
+			<a href="Order.html">Place Order</a>
+			<a href="Reservation.html">Book In</a>
+			<a href="Feedback.html">Rate Us</a>
+		</nav>
+	</header>
+	<main>
+		<h1>Feedback</h1>
+		<form action="feedback.php" method="post">
+            <label for="name">Your Name (Optional):</label>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="rating">Overall Experience Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="">Select Rating</option>
+                <option value="5">Excellent</option>
+                <option value="4">Very Good</option>
+                <option value="3">Good</option>
+                <option value="2">Fair</option>
+                <option value="1">Poor</option>
+            </select><br>
+
+            <label for="food">Feedback on Food (Optional):</label>
+            <textarea id="food" name="food" rows="5"></textarea><br>
+
+            <label for="service">Feedback on Service (Optional):</label>
+            <textarea id="service" name="service" rows="5"></textarea><br>
+
+        <button type="button" onclick="submitFeedback()">Submit Feedback</button>
+    </form>
+	</main>
+</body>

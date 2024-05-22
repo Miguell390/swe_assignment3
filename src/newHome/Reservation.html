@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Header information-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" Content="Software Architectures and Design Assignment 3">
+    <meta name="keywords" Content="HTML, CSS, JavaScript, PHP, SWE30003, Reservation">
+    <meta name="Author" Content="Demetre, Kobie, Miguel, Hugh">
+    <title>Reservation</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<!--Page content-->
+
+<body>
+     <!--Nav Bar-->
+    <header>
+	<a href="Home.html"><image class="banner" src="images/RelaxingKoalaLogoLong.png"></a>
+		<nav>
+			<a href="Order.html">Place Order</a>
+			<a href="Reservation.html">Book In</a>
+			<a href="Feedback.html">Rate Us</a>
+		</nav>
+	</header>
+	<main>
+		<h1>Reservation</h1>
+		<form action="reserve.php" method="post"> 
+		<label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="time">Time:</label>
+        <select id="time" name="time" required>
+            <option value="">Select Time</option>
+            <option value="17:00">5:00 PM</option>
+            <option value="17:30">5:30 PM</option>
+            <option value="18:00">6:00 PM</option>
+            <option value="18:30">6:30 PM</option>
+			<option value="19:00">7:00 PM</option>
+            <option value="19:30">7:30 PM</option>
+			<option value="20:00">8:00 PM</option>
+            <option value="20:30">8:30 PM</option>
+			<option value="21:00">9:00 PM</option>
+            <option value="21:30">9:30 PM</option>
+            </select><br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <button type="button" onclick="submitReservation()">Submit Reservation</button>
+    </form>
+	</main>
+</body>

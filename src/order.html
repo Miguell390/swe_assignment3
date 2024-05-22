@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Software Architectures and Design Assignment 3">
+    <meta name="keywords" content="HTML, CSS, JavaScript, PHP, SWE30003, Order, Place Order">
+    <meta name="author" content="Demetre, Kobie, Miguel, Hugh">
+    <title>Order</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="Home.html"><img class="banner" src="images/RelaxingKoalaLogoLong.png" alt="Relaxing Koala Logo"></a>
+        <nav>
+            <a href="Order.html">Place Order</a>
+            <a href="Reservation.html">Book In</a>
+            <a href="Feedback.html">Rate Us</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Order Selection</h1>
+        <div class="order-container">
+            <div class="menu">
+                <h2>Menu</h2>
+                <ul id="menu-items">
+                    <!-- Menu items will be inserted here dynamically -->
+                </ul>
+            </div>
+            <div class="selected-items">
+                <h2>Your Order</h2>
+                <ul id="order-items">
+                    <!-- Selected order items will appear here -->
+                </ul>
+            </div>
+        </div>
+        <button type="button" onclick="submitOrder()">Submit Order</button>
+        <script src="scripts/Order.js"></script>
+    </main>
+</body>
+
+</html>

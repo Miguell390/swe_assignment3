@@ -16,9 +16,9 @@ INSERT INTO MenuItems (menuName, price) VALUES
 ('Grilled Salmon', 18),
 ('Vegetable Stir-fry', 13);
 
-INSERT INTO FeedbackReview (rating, feedbackNotes) VALUES
-(10, 'The chicken was bussin'),
-(2, 'The chicken was dry'),
-(5, 'Salmon was raw'),
-(7, 'it was mid'),
-(1, 'Food taste like shit');
+-- INSERT INTO FeedbackReview (rating, feedbackNotes) VALUES
+-- (10, 'The chicken was bussin'),
+-- (2, 'The chicken was dry'),
+-- (5, 'Salmon was raw'),
+-- (7, 'it was mid'),
+-- (1, 'Food taste like shit');

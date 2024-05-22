@@ -57,7 +57,7 @@ class Customer {
   
       const customer = new Customer(name, email);
       customer.makeReservation(date, time, partySize);
-      // Clear the form fields after submission
+      
       reservationForm.reset();
     });
   
@@ -70,7 +70,7 @@ class Customer {
       const customerName = document.getElementById('customerName').value;
       const item = document.getElementById('orderItem').value;
       order.addItem(item);
-      // Clear the item field after adding
+      
       document.getElementById('orderItem').value = '';
     });
   
@@ -79,7 +79,7 @@ class Customer {
       const customerName = document.getElementById('customerName').value;
       customer.name = customerName;
       customer.placeOrder(tableNumber, order.items);
-      order.items = []; // Clear the order items after placing order
+      order.items = []; 
       order.renderOrder();
     });
   });
